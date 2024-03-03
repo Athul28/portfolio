@@ -16,4 +16,7 @@
   .experience-card{
     @apply border-2 border-slate-500 rounded-3xl sm:m-20 max-sm:m-8 lg:w-[400px] md:w-[300px] text-center p-3;
   }
+  .dark{
+    @apply text-white dark:bg-gray-800;
+  }
 }

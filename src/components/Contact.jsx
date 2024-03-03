@@ -4,7 +4,7 @@ import { ImLinkedin } from "react-icons/im";
 
 function Contact() {
   return (
-    <div className="text-center">
+    <div className="text-center mt-10" id="contact">
       <p className="text-4xl text-slate-700">Get in touch</p>
       <p className="text-5xl font-bold">Contact me</p>
       <div className="flex justify-center p-2 mt-10 text-xl">

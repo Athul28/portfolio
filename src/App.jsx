@@ -12,9 +12,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <hr />
       <Intro />
-      <hr />
       <About />
       <hr />
       <Experience />
