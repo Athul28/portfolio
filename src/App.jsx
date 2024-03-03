@@ -4,14 +4,23 @@ import Intro from "./components/Intro"
 import Experience from "./components/Experience"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
+import About from "./components/About"
+import Projects from "./components/Projects"
 
 function App() {
 
   return (
     <>
       <Navbar />
+      <hr />
       <Intro />
+      <hr />
+      <About />
+      <hr />
       <Experience />
+      <hr />
+      <Projects />
+      <hr />
       <Contact />
       <Footer />
     </>

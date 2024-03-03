@@ -3,7 +3,7 @@ import React from "react";
 function Footer(){
     return(
         <div>
-            <ul className="sm:flex text-center">
+            <ul className="sm:flex justify-center">
                 <li className="p-1 text-lg"><a href="#">About</a></li>
                 <li className="p-1 text-lg"><a href="#">Experience</a></li>
                 <li className="p-1 text-lg"><a href="#">Projects</a></li>
