@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .nav-item{
+    @apply p-2 text-center;
+  }
+
+  .bd{
+    @apply border border-black;
+  }
+  .hamburger-custom {
+    @apply bg-black;
+  }
+  .experience-card{
+    @apply border-2 border-slate-500 rounded-3xl m-20 lg:w-[400px] md:w-[300px] text-center p-3;
+  }
+}
