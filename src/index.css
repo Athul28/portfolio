@@ -14,6 +14,6 @@
     @apply bg-black;
   }
   .experience-card{
-    @apply border-2 border-slate-500 rounded-3xl m-20 lg:w-[400px] md:w-[300px] text-center p-3;
+    @apply border-2 border-slate-500 rounded-3xl sm:m-20 max-sm:m-8 lg:w-[400px] md:w-[300px] text-center p-3;
   }
 }
