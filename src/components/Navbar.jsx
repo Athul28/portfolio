@@ -20,7 +20,7 @@ function Navbar({ isDarkMode, setDarkMode}) {
 
   return (
     <nav className={`p-5 md:flex justify-between ${isDarkMode ? 'dark' : ''}`}>
-      <h1 className="my-auto text-3xl">Athul Bhandary</h1>
+      <h1 className="my-auto text-3xl cursor-pointer">Athul Bhandary</h1>
       <ul
         className={`md:flex md:mr-16 my-auto text-xl ${
           isOpen ? "" : "hidden mr-8"

@@ -10,7 +10,7 @@ function Experience({ isDarkMode }) {
       </div>
       <div className="md:flex justify-center sm:p-20 max-sm:p-10 gap-5">
         <div className="experience-card">
-          <p className="text-4xl font-bold text-slate-700 py-3">
+          <p className={`text-4xl font-bold ${isDarkMode ? 'dark-green' : 'text-slate-700'}`}>
             Frontend Development
           </p>
           <div className="lg:grid grid-cols-2">
@@ -21,7 +21,8 @@ function Experience({ isDarkMode }) {
           </div>
         </div>
         <div className="experience-card  max-md:mt-10">
-          <p className="text-4xl font-bold text-slate-700 py-3">Other Skills</p>
+          <p className={`text-4xl font-bold ${isDarkMode ? 'dark-green' : 'text-slate-700'}`}>
+            Other Skills</p>
           <div className="lg:grid grid-cols-2">
             <SkillItem skill="C++" level="Intermediate" />
             <SkillItem skill="Java" level="Intermediate" />

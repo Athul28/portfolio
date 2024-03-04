@@ -3,6 +3,9 @@ import { IoMail } from "react-icons/io5";
 import { ImLinkedin } from "react-icons/im";
 
 function Contact({ isDarkMode }) {
+
+  const linkedinLink="https://www.linkedin.com/in/athul-d-bhandary-0b1912247/";
+
   return (
     <div className={`text-center pt-10 ${isDarkMode ? 'dark' : ''}`} id="contact">
       <p className={`text-4xl ${isDarkMode ? 'dark-green' : 'text-slate-700'}`}>Get in touch</p>
@@ -11,11 +14,11 @@ function Contact({ isDarkMode }) {
         <div className="m-auto bd sm:flex p-6 rounded-3xl">
           <div className="flex justify-center">
             <IoMail className="my-auto mx-2" />
-            <p>athulbhandary28@gmail.com</p>
+            <a href="mailto:athulbhandary28@gmail.com" className="cursor-pointer">athulbhandary28@gmail.com</a>
           </div>
           <div className="flex justify-center">
             <ImLinkedin className="my-auto mx-2" />
-            <p>LinkedIn</p>
+            <a href={linkedinLink} className="cursor-pointer">LinkedIn</a>
           </div>
         </div>
       </div>
