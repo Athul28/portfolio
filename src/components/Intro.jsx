@@ -19,16 +19,16 @@ function Intro({ isDarkMode }) {
 
   return (
     <div className={`lg:flex md:p-20 justify-center ${isDarkMode ? 'dark' : ''}`}>
-      <div className="">
+      <div className="p-5">
         <img
           src={profilePic}
           alt="profile-pic"
-          className="h-[450px] max-sm:h-[350px] m-auto p-5 object-cover"
+          className="h-[450px] max-sm:h-[350px] m-auto color-shadow-image rounded-full"
         />
       </div>
       <div className="my-auto p-5 text-center">
         <p className={`font-bold text-4xl ${isDarkMode ? 'dark-green' : 'text-slate-700'}`}>Hello, I'm</p>
-        <p className="font-bold text-6xl my-3">Athul Bhandary</p>
+        <p className="font-bold text-6xl py-3 typing-text">Athul Bhandary</p>
         <p className={`font-bold text-4xl ${isDarkMode ? 'dark-green' : 'text-slate-700'}`}>Frontend Developer</p>
         <button
           className={`border border-black p-3 m-2 rounded-[30px] w-24 ${isDarkMode ? 'border-white' : 'border-black'}`}

@@ -2,24 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-  .nav-item{
+@layer components {
+  .nav-item {
     @apply p-2 text-center;
   }
 
-  .bd{
+  .bd {
     @apply border border-black;
   }
   .hamburger-custom {
     @apply bg-black;
   }
-  .experience-card{
+  .experience-card {
     @apply border-2 border-slate-500 rounded-3xl lg:w-[400px] md:w-[300px] text-center p-3;
   }
-  .dark{
+  .dark {
     @apply text-white dark:bg-gray-800;
   }
-  .dark-green{
+  .dark-green {
     @apply text-green-400;
+  }
+}
+
+@keyframes colorShadow {
+  0% {
+    box-shadow: 0 0 30px 13px rgba(255, 247, 0, 0.3); /* Red shadow, blur, and opacity */
+  }
+  50% {
+    box-shadow: 0 0 30px 13px rgba(62, 225, 68, 0.3); /* Green shadow, blur, and opacity */
+  }
+  100% {
+    box-shadow: 0 0 30px 13px rgba(0, 247, 255, 0.3); /* Blue shadow, blur, and opacity */
+  }
+}
+
+.color-shadow-image {
+  animation: colorShadow 4s infinite alternate; /* Animation name, duration, and behavior */
+}
+
+.typing-text {
+  overflow: hidden;
+  white-space: nowrap; /* Simulates a typing cursor */
+  animation: typing 3s steps(40, end);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
   }
 }
