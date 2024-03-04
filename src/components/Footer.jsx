@@ -34,7 +34,7 @@ function Footer({ isDarkMode }) {
         </li>
       </ul>
       <p className={`text-center py-2 p-2 ${isDarkMode ? 'dark-green' : 'text-slate-700'}`}>
-        Copyright © 2023 Athul Bhandary. All Rights Reserved.
+        Copyright © 2024 Athul Bhandary. All Rights Reserved.
       </p>
     </div>
   );

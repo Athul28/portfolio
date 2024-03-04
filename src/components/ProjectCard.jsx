@@ -3,7 +3,7 @@ import React from "react";
 
 function ProjectCard(props) {
   return (
-    <div className={`border-[3px] border-slate-700 p-5 rounded-xl mx-auto ${props.isDarkMode ? 'bg-slate-700' : ''}`} >
+    <div className={`border-[3px] p-5 rounded-xl mx-auto ${props.isDarkMode ? 'bg-slate-700 border-slate-700' : 'border-slate-700'}`} >
       <img
         src={props.imgLink}
         alt="ProjectImage"
