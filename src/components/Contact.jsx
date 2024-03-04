@@ -10,13 +10,13 @@ function Contact({ isDarkMode }) {
     <div className={`text-center pt-10 ${isDarkMode ? 'dark' : ''}`} id="contact">
       <p className={`text-4xl ${isDarkMode ? 'dark-green' : 'text-slate-700'}`}>Get in touch</p>
       <p className="text-5xl font-bold">Contact me</p>
-      <div className="flex justify-center p-2 mt-10 text-xl">
-        <div className="m-auto bd sm:flex p-6 rounded-3xl">
-          <div className="flex justify-center">
+      <div className="flex justify-center p-2 mt-10 text-xl pb-10">
+        <div className={`m-auto sm:flex p-6 rounded-3xl ${isDarkMode ? 'border ':'bd'} `}>
+          <div className="flex justify-center hover:text-green-400">
             <IoMail className="my-auto mx-2" />
             <a href="mailto:athulbhandary28@gmail.com" className="cursor-pointer">athulbhandary28@gmail.com</a>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center hover:text-green-400">
             <ImLinkedin className="my-auto mx-2" />
             <a href={linkedinLink} className="cursor-pointer">LinkedIn</a>
           </div>

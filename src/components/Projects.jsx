@@ -26,10 +26,10 @@ function Projects({ isDarkMode }) {
         <p className="text-5xl font-bold">Projects</p>
       </div>
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-3 mt-5 px-5">
-        <ProjectCard  imgLink={Project1} projectTitle="GPT Assistant" link1={p1GithubLink} link2={p1DemoLink}/>
-        <ProjectCard  imgLink={Project2} projectTitle="Cars Site" link1={p2GithubLink} link2={p2DemoLink}/>
-        <ProjectCard  imgLink={Project3} projectTitle="Car Rental System" link1={p3GithubLink} link2={p3DemoLink}/>
-        <ProjectCard  imgLink={Project4} projectTitle="Financial Chatbot" link1={p4GithubLink} link2={p4DemoLink}/>
+        <ProjectCard  imgLink={Project1} projectTitle="GPT Assistant" link1={p1GithubLink} link2={p1DemoLink} isDarkMode={isDarkMode}/>
+        <ProjectCard  imgLink={Project2} projectTitle="Cars Site" link1={p2GithubLink} link2={p2DemoLink} isDarkMode={isDarkMode}/>
+        <ProjectCard  imgLink={Project3} projectTitle="Car Rental System" link1={p3GithubLink} link2={p3DemoLink} isDarkMode={isDarkMode}/>
+        <ProjectCard  imgLink={Project4} projectTitle="Financial Chatbot" link1={p4GithubLink} link2={p4DemoLink} isDarkMode={isDarkMode}/>
       </div>
     </div>
   );
