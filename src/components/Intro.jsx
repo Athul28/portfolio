@@ -4,7 +4,7 @@ import { ImLinkedin } from "react-icons/im";
 import { FaGithub } from "react-icons/fa6";
 import Resume from "../assets/Resume.pdf";
 
-function Intro() {
+function Intro({ isDarkMode }) {
   const githubLink = "https://github.com/Athul28";
   const linkedinLink =
     "https://www.linkedin.com/in/athul-d-bhandary-0b1912247/";
@@ -18,7 +18,7 @@ function Intro() {
   };
 
   return (
-    <div className="lg:flex md:p-20 justify-center">
+    <div className={`lg:flex md:p-20 justify-center ${isDarkMode ? 'dark' : ''}`}>
       <div className="">
         <img
           src={profilePic}
@@ -27,11 +27,11 @@ function Intro() {
         />
       </div>
       <div className="my-auto p-5 text-center">
-        <p className="font-bold text-4xl text-slate-700">Hello, I'm</p>
+        <p className={`font-bold text-4xl ${isDarkMode ? 'dark-green' : 'text-slate-700'}`}>Hello, I'm</p>
         <p className="font-bold text-6xl my-3">Athul Bhandary</p>
-        <p className="font-bold text-4xl text-slate-700">Frontend Developer</p>
+        <p className={`font-bold text-4xl ${isDarkMode ? 'dark-green' : 'text-slate-700'}`}>Frontend Developer</p>
         <button
-          className="border border-black p-3 m-2 rounded-[30px] w-24"
+          className={`border border-black p-3 m-2 rounded-[30px] w-24 ${isDarkMode ? 'border-white' : 'border-black'}`}
           onClick={handleWebsiteClick}
         >
           Download Resume

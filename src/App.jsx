@@ -9,18 +9,20 @@ import Projects from "./components/Projects"
 
 function App() {
 
+  const [isDarkMode, setDarkMode] = React.useState(true);
+
   return (
     <>
-      <Navbar />
-      <Intro />
-      <About />
-      <hr />
-      <Experience />
-      <hr />
-      <Projects />
-      <hr />
-      <Contact />
-      <Footer />
+      <Navbar
+        isDarkMode={isDarkMode}
+        setDarkMode={setDarkMode}
+      />
+      <Intro isDarkMode={isDarkMode}/>
+      <About isDarkMode={isDarkMode}/>
+      <Experience isDarkMode={isDarkMode}/>
+      <Projects isDarkMode={isDarkMode}/>
+      <Contact isDarkMode={isDarkMode}/>
+      <Footer isDarkMode={isDarkMode}/>
     </>
   )
 }

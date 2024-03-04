@@ -1,16 +1,16 @@
 import React from "react";
 import SkillItem from "./SkillsItem";
 
-function Experience() {
+function Experience({ isDarkMode }) {
   return (
-    <div id="experience">
+    <div className={`${isDarkMode ? 'dark' : ''}`} id="experience">
       <div className="text-center p-3">
-        <p className="text-4xl font-bold text-slate-700">Explore my</p>
+        <p className={`text-4xl ${isDarkMode ? 'dark-green' : 'text-slate-700'}`}>Explore my</p>
         <p className="text-5xl font-bold">Experience</p>
       </div>
-      <div className="md:flex justify-center">
+      <div className="md:flex justify-center sm:p-20 max-sm:p-10 gap-5">
         <div className="experience-card">
-          <p className="text-4xl font-bold text-slate-700 my-3">
+          <p className="text-4xl font-bold text-slate-700 py-3">
             Frontend Development
           </p>
           <div className="lg:grid grid-cols-2">
@@ -20,8 +20,8 @@ function Experience() {
             <SkillItem skill="Material UI" level="Intermediate" />
           </div>
         </div>
-        <div className="experience-card">
-          <p className="text-4xl font-bold text-slate-700 my-3">Other Skills</p>
+        <div className="experience-card  max-md:mt-10">
+          <p className="text-4xl font-bold text-slate-700 py-3">Other Skills</p>
           <div className="lg:grid grid-cols-2">
             <SkillItem skill="C++" level="Intermediate" />
             <SkillItem skill="Java" level="Intermediate" />

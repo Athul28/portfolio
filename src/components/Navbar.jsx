@@ -2,13 +2,12 @@ import React from "react";
 import Hamburger from "hamburger-react";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 
-function Navbar() {
+function Navbar({ isDarkMode, setDarkMode}) {
   const [isOpen, setOpen] = React.useState(false);
 
   const openMenu = () => {
     setOpen(!isOpen);
   };
-  const [isDarkMode, setDarkMode] = React.useState(false);
 
   const toggleDarkMode = () => {
     setDarkMode(!isDarkMode);
