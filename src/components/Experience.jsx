@@ -10,18 +10,18 @@ function Experience({ isDarkMode }) {
       </div>
       <div className="md:flex justify-center sm:p-20 max-sm:p-10 gap-5">
         <div className="experience-card">
-          <p className={`text-4xl font-bold ${isDarkMode ? 'dark-green' : 'text-slate-700'}`}>
+          <p className={`text-4xl font-bold pb-5 ${isDarkMode ? 'dark-green' : 'text-slate-700'}`}>
             Frontend Development
           </p>
           <div className="lg:grid grid-cols-2">
-            <SkillItem skill="HTML" level="Experienced" />
-            <SkillItem skill="CSS" level="Experienced" />
+            <SkillItem skill="React" level="Basic" />
+            <SkillItem skill="TailwindCSS" level="Intermediate" />
             <SkillItem skill="JavaScript" level="Basic" />
-            <SkillItem skill="Material UI" level="Intermediate" />
+            <SkillItem skill="Material UI" level="Basic" />
           </div>
         </div>
         <div className="experience-card  max-md:mt-10">
-          <p className={`text-4xl font-bold ${isDarkMode ? 'dark-green' : 'text-slate-700'}`}>
+          <p className={`text-4xl font-bold pb-5 ${isDarkMode ? 'dark-green' : 'text-slate-700'}`}>
             Other Skills</p>
           <div className="lg:grid grid-cols-2">
             <SkillItem skill="C++" level="Intermediate" />

@@ -20,29 +20,29 @@ function Navbar({ isDarkMode, setDarkMode}) {
 
   return (
     <nav className={`p-5 md:flex justify-between ${isDarkMode ? 'dark' : ''}`}>
-      <h1 className="my-auto text-3xl cursor-pointer">Athul Bhandary</h1>
+      <h1 className={`my-auto text-3xl cursor-pointer ${isDarkMode ? 'hover:dark-green':'hover:text-slate-500'}`}>Athul Bhandary</h1>
       <ul
         className={`md:flex md:mr-16 my-auto text-xl ${
           isOpen ? "" : "hidden mr-8"
         }`}
       >
-        <li className="nav-item">
+        <li className={`nav-item ${isDarkMode ? 'hover:dark-green':'hover:text-slate-500'}`}>
           <a className="cursor-pointer" onClick={() => openElement("about")}>
             About
           </a>
         </li>
-        <li className="nav-item">
+        <li className={`nav-item ${isDarkMode ? 'hover:dark-green':'hover:text-slate-500'}`}>
           <a className="cursor-pointer" onClick={() => openElement("experience")}
           >
             Experience
           </a>
         </li>
-        <li className="nav-item">
+        <li className={`nav-item ${isDarkMode ? 'hover:dark-green':'hover:text-slate-500'}`}>
           <a className="cursor-pointer" onClick={() => openElement("projects")}>
             Projects
           </a>
         </li>
-        <li className="nav-item">
+        <li className={`nav-item ${isDarkMode ? 'hover:dark-green':'hover:text-slate-500'}`}>
           <a className="cursor-pointer" onClick={() => openElement("contact")}>
             Contact
           </a>

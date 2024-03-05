@@ -25,7 +25,7 @@ function About({ isDarkMode }) {
         <div className="p-4 border-2 border-slate-500 m-5 rounded-xl sm:w-[400px] max-sm:w-[250px] max-sm:mx-auto">
         <PiMedalFill className="m-auto" size="30px"/>
           <p className="text-xl font-bold">Experience</p>
-          <p>2+ years Frontend Developer</p>
+          <p>Started my Frontend Developement Jouney in 2024</p>
         </div>
         <div className="p-4 border-2 border-slate-500 m-5 rounded-xl sm:w-[400px] max-sm:w-[250px] max-sm:mx-auto">
         <IoBook className="m-auto" size="30px"/>
