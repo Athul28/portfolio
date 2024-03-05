@@ -23,7 +23,7 @@ function Intro({ isDarkMode }) {
         <img
           src={profilePic}
           alt="profile-pic"
-          className="h-[450px] max-sm:h-[300px] m-auto color-shadow-image rounded-full object-cover"
+          className="h-[450px] max-sm:h-[300px] m-auto color-shadow-image rounded-full object-cover cursor-pointer"
         />
       </div>
       <div className="my-auto p-5 text-center">
@@ -31,13 +31,13 @@ function Intro({ isDarkMode }) {
         <p className="font-bold text-6xl py-3 typing-text">Athul Bhandary</p>
         <p className={`font-bold text-4xl ${isDarkMode ? 'dark-green' : 'text-slate-700'}`}>Frontend Developer</p>
         <button
-          className={`border border-black p-3 m-2 rounded-[30px] w-24 ${isDarkMode ? 'border-white' : 'border-black'}`}
+          className={`border border-black p-3 m-2 rounded-[30px] w-24 ${isDarkMode ? 'border-white hover:bg-slate-600' : 'border-black hover:bg-slate-300'}`}
           onClick={handleWebsiteClick}
         >
           Download Resume
         </button>
         <button
-          className="bg-slate-700 text-white p-3 m-2 rounded-[30px] w-24"
+          className="bg-slate-700 text-white p-3 m-2 rounded-[30px] w-24 hover:bg-slate-600"
           onClick={() => {
             const contactElement = document.getElementById("contact");
             contactElement.scrollIntoView({ behavior: "smooth" });
