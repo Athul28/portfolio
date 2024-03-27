@@ -47,11 +47,11 @@ function Intro({ isDarkMode }) {
         </button>
         <div className="flex justify-center">
           <ImLinkedin
-            className="text-3xl rounded-full m-2 cursor-pointer"
+            className="text-3xl rounded-full m-2 cursor-pointer hover:dark-green hover:scale-110 transition"
             onClick={() => window.open(linkedinLink)}
           />
           <FaGithub
-            className="text-3xl rounded-full m-2 cursor-pointer"
+            className="text-3xl rounded-full m-2 cursor-pointer hover:dark-green hover:scale-110 transition"
             onClick={() => window.open(githubLink)}
           />
         </div>

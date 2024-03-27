@@ -10,25 +10,25 @@ function Footer({ isDarkMode }) {
     <div className={`${isDarkMode ? 'dark' : ''}`}>
       <ul className="sm:flex justify-center text-center">
         <li className="p-1 text-lg">
-          <a className="cursor-pointer" onClick={() => openElement("about")}>
+          <a className="cursor-pointer hover:dark-green" onClick={() => openElement("about")}>
             About
           </a>
         </li>
         <li className="p-1 text-lg">
           <a
-            className="cursor-pointer"
+            className="cursor-pointer hover:dark-green"
             onClick={() => openElement("experience")}
           >
             Experience
           </a>
         </li>
         <li className="p-1 text-lg">
-          <a className="cursor-pointer" onClick={() => openElement("projects")}>
+          <a className="cursor-pointer hover:dark-green" onClick={() => openElement("projects")}>
             Projects
           </a>
         </li>
         <li className="p-1 text-lg">
-          <a className="cursor-pointer" onClick={() => openElement("contact")}>
+          <a className="cursor-pointer hover:dark-green" onClick={() => openElement("contact")}>
             Contact
           </a>
         </li>
