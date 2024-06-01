@@ -23,7 +23,7 @@ function Intro({ isDarkMode }) {
         <img
           src={profilePic}
           alt="profile-pic"
-          className="h-[450px] max-sm:h-[300px] m-auto color-shadow-image rounded-full object-cover cursor-pointer"
+          className="h-[450px] max-sm:h-[300px] m-auto rounded-full object-cover cursor-pointer"
         />
       </div>
       <div className="my-auto p-5 text-center">
