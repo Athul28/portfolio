@@ -6,6 +6,7 @@ import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import About from "./components/About"
 import Projects from "./components/Projects"
+import MyTechStacks from "./components/MyTechStacks"
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <Intro isDarkMode={isDarkMode}/>
       <About isDarkMode={isDarkMode}/>
       <Experience isDarkMode={isDarkMode}/>
+      <MyTechStacks isDarkMode={isDarkMode}/>
       <Projects isDarkMode={isDarkMode}/>
       <Contact isDarkMode={isDarkMode}/>
       <Footer isDarkMode={isDarkMode}/>
