@@ -1,13 +1,6 @@
 import React from "react";
-import { useState } from "react";
 
 function ProjectCard(props) {
-  const [imgLoading, setImgLoading] = useState(true);
-
-  const handleImageLoad = () => {
-    setImgLoading(false);
-  };
-
   return (
     <div
       className={` p-5 rounded-xl mx-auto hover:scale-105 transition ${
@@ -16,18 +9,10 @@ function ProjectCard(props) {
           : " bg-slate-300"
       }`}
     >
-      {imgLoading && (
-        <div className="h-[300px] w-[300px] mx-auto rounded-xl">
-          <div className="flex items-center justify-center h-[300px] w-[300px] mx-auto">
-            <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-green-600"></div>
-          </div>
-        </div>
-      )}
       <img
         src={props.imgLink}
         alt="ProjectImage"
-        className={`h-[300px] w-[300px] mx-auto rounded-xl object-cover ${imgLoading ? "hidden" : ""}`}
-        onLoad={handleImageLoad}
+        className={`h-[300px] w-[300px] mx-auto rounded-xl object-cover `}
       />
 
       <p className="text-center font-bold text-2xl p-3">{props.projectTitle}</p>

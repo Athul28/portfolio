@@ -5,6 +5,7 @@ import Project2 from "../assets/project-2.png";
 import Project3 from "../assets/project-3.png";
 import Project4 from "../assets/project-4.jpg";
 import ResumeImage from "../assets/resumeBuilder.jpg";
+import Elearn from "../assets/e-learn.jpg"
 import todoSite from "../assets/todoSite.jpg";
 
 function Projects({ isDarkMode }) {
@@ -26,6 +27,9 @@ function Projects({ isDarkMode }) {
   const todoGitHubLink = "https://github.com/Athul28/Todo-app";
   const todoSiteLink = "https://todo-app-beta-eosin.vercel.app/";
 
+  const elearnGitHubLink="https://github.com/Athul28/Skill-Sphere"
+  const elearnSiteLink="https://skill-sphere-six.vercel.app/"
+
   return (
     <div className={`${isDarkMode ? "dark" : ""}`} id="projects">
       <div className="text-center pt-10">
@@ -37,6 +41,13 @@ function Projects({ isDarkMode }) {
         <p className="text-5xl font-bold">Projects</p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 py-3 mt-5 px-5 lg:px-20">
+      <ProjectCard
+          imgLink={Elearn}
+          projectTitle="E Learning Platform"
+          link1={elearnGitHubLink}
+          link2={elearnSiteLink}
+          isDarkMode={isDarkMode}
+        />
         <ProjectCard
           imgLink={todoSite}
           projectTitle="To Do Website"
