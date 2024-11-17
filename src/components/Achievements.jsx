@@ -1,9 +1,10 @@
 import React from "react";
-import winners3 from "../assets/winners3.jpg";
 
 function Achievements({ isDarkMode }) {
   const linkedinLink =
     "https://www.linkedin.com/in/athul-d-bhandary-0b1912247/";
+
+    const imgLink="https://firebasestorage.googleapis.com/v0/b/csi-images.appspot.com/o/portfolio%2Fwinners3.jpg?alt=media&token=52ac5f0b-1922-44a2-8619-ed0752041677"
 
 return (
     <div
@@ -16,7 +17,7 @@ return (
         <p className="text-5xl font-bold">Achievements</p>
         <div className="relative w-fit m-auto group py-10 hover:cursor-pointer">
             <img
-                src={winners3}
+                src={imgLink}
                 alt="image"
                 className="m-auto h-[230px] md:h-[300px] lg:h-[500px] group-hover:opacity-50 transition-opacity duration-300"
             />
