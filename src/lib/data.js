@@ -9,7 +9,7 @@ export const myProjects = [
         title: "Think or Shrink",
         imgLink: "https://firebasestorage.googleapis.com/v0/b/csi-images.appspot.com/o/portfolio%2Fthink.jpg?alt=media&token=cbf8c991-3134-4ce4-bc48-19f93df28c9e",
         githubLink: "https://github.com/tasc-nmamit/thinkorsink",
-        demoLink: "https://github.com/tasc-nmamit/thinkorsink"
+        demoLink: "https://thinkorsink.vercel.app/"
     },
     {
         title: "Play Store review Analysis",
