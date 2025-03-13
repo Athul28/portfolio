@@ -23,21 +23,17 @@ function About({ isDarkMode }) {
       </div>
       <div className="sm:flex justify-center text-center">
         <div className="p-4 border-2 border-slate-500 m-5 rounded-xl sm:w-[400px] max-sm:w-[250px] max-sm:mx-auto">
-        <PiMedalFill className="m-auto" size="30px"/>
+          <PiMedalFill className="m-auto" size="30px" />
           <p className="text-xl font-bold">Experience</p>
           <p>Started my Frontend Developement Journey in 2024</p>
         </div>
         <div className="p-4 border-2 border-slate-500 m-5 rounded-xl sm:w-[400px] max-sm:w-[250px] max-sm:mx-auto">
-        <IoBook className="m-auto" size="30px"/>
+          <IoBook className="m-auto" size="30px" />
           <p className="text-xl font-bold">Education</p>
-          <p>BTech in AIML</p>
+          <p>BTech in Artificial Intelligence and Machine Learning</p>
         </div>
       </div>
-      <p
-        className={`p-7 text-center ${
-          isDarkMode ? "" : "text-slate-700"
-        }`}
-      >
+      <p className={`p-7 text-center ${isDarkMode ? "" : "text-slate-700"}`}>
         I am a student pursuing my Engineering at NMAMIT, and I am passionate
         about programming and learning new stuffs!
       </p>
