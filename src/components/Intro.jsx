@@ -27,7 +27,7 @@ function Intro({ isDarkMode }) {
           src={profilePic}
           alt="Athul Bhandary - Full Stack Developer and AI ML Engineer Profile Picture"
           title="Athul Bhandary - Full Stack Developer"
-          className="h-[450px] max-sm:h-[300px] m-auto color-shadow-image rounded-full object-cover cursor-pointer"
+          className="h-[450px] max-sm:h-[300px] max-sm:w-[300px] m-auto color-shadow-image rounded-full object-cover cursor-pointer"
           loading="eager"
           width="450"
           height="450"
