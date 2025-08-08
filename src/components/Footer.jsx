@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from 'prop-types';
 
 function Footer({ isDarkMode }) {
   const openElement = (elementId) => {
@@ -34,10 +34,14 @@ function Footer({ isDarkMode }) {
         </li>
       </ul>
       <p className={`text-center py-2 p-2 ${isDarkMode ? 'dark-green' : 'text-slate-700'}`}>
-        Copyright © 2024 Athul Bhandary. All Rights Reserved.
+        Copyright © 2025 Athul Bhandary. All Rights Reserved.
       </p>
     </div>
   );
 }
+
+Footer.propTypes = {
+  isDarkMode: PropTypes.bool.isRequired,
+};
 
 export default Footer;

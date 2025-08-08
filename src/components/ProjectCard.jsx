@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 function ProjectCard(props) {
   return (
@@ -11,8 +11,14 @@ function ProjectCard(props) {
     >
       <img
         src={props.imgLink}
-        alt="ProjectImage"
+        alt={`${
+          props.projectTitle
+        } - Project by Athul Bhandary showcasing ${props.projectTitle.toLowerCase()} development skills`}
+        title={`${props.projectTitle} - Full Stack Development Project`}
         className={`h-[300px] w-[300px] mx-auto rounded-xl object-cover `}
+        loading="lazy"
+        width="300"
+        height="300"
       />
 
       <p className="text-center font-bold text-2xl p-3">{props.projectTitle}</p>
@@ -37,5 +43,13 @@ function ProjectCard(props) {
     </div>
   );
 }
+
+ProjectCard.propTypes = {
+  isDarkMode: PropTypes.bool.isRequired,
+  imgLink: PropTypes.string.isRequired,
+  projectTitle: PropTypes.string.isRequired,
+  link1: PropTypes.string.isRequired,
+  link2: PropTypes.string.isRequired,
+};
 
 export default ProjectCard;

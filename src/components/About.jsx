@@ -1,7 +1,7 @@
-import React from "react";
 import AboutPic from "../assets/about-pic.png";
 import { IoBook } from "react-icons/io5";
 import { PiMedalFill } from "react-icons/pi";
+import PropTypes from "prop-types";
 
 function About({ isDarkMode }) {
   return (
@@ -17,8 +17,12 @@ function About({ isDarkMode }) {
       <div className="p-5">
         <img
           src={AboutPic}
-          alt="AboutPic"
+          alt="Athul Bhandary About Me - BTech AI ML Student at NMAMIT"
+          title="About Athul Bhandary - Full Stack Developer"
           className="m-auto w-[300px] rounded-2xl"
+          loading="lazy"
+          width="300"
+          height="400"
         />
       </div>
       <div className="sm:flex justify-center text-center">
@@ -40,5 +44,8 @@ function About({ isDarkMode }) {
     </div>
   );
 }
+About.propTypes = {
+  isDarkMode: PropTypes.bool.isRequired,
+};
 
 export default About;

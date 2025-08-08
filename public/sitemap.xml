@@ -1,8 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://athulbhandary-portfolio.vercel.app/</loc>
-    <lastmod>2024-09-10</lastmod>
+    <loc>https://athulbhandary.tech/</loc>
+    <lastmod>2025-08-08</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.00</priority>
+    <image:image>
+      <image:loc>https://athulbhandary.tech/profile1.png</image:loc>
+      <image:caption>Athul Bhandary - Full Stack Developer Profile Picture</image:caption>
+      <image:title>Athul Bhandary</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://athulbhandary.tech/profile2.png</image:loc>
+      <image:caption>Athul Bhandary About Picture</image:caption>
+      <image:title>About Athul Bhandary</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://athulbhandary.tech/#about</loc>
+    <lastmod>2025-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://athulbhandary.tech/#experience</loc>
+    <lastmod>2025-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://athulbhandary.tech/#projects</loc>
+    <lastmod>2025-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://athulbhandary.tech/#contact</loc>
+    <lastmod>2025-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
   </url>
 </urlset>

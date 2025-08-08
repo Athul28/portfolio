@@ -1,10 +1,9 @@
-import React from "react";
 import profilePic from "../assets/profile-pic.png";
 import { ImLinkedin } from "react-icons/im";
 import { FaGithub } from "react-icons/fa6";
 import Resume from "../assets/Resume.pdf";
 import Typewriter from "typewriter-effect";
-
+import PropTypes from "prop-types"
 
 function Intro({ isDarkMode }) {
   const githubLink = "https://github.com/Athul28";
@@ -26,8 +25,12 @@ function Intro({ isDarkMode }) {
       <div className="p-5">
         <img
           src={profilePic}
-          alt="profile-pic"
+          alt="Athul Bhandary - Full Stack Developer and AI ML Engineer Profile Picture"
+          title="Athul Bhandary - Full Stack Developer"
           className="h-[450px] max-sm:h-[300px] m-auto color-shadow-image rounded-full object-cover cursor-pointer"
+          loading="eager"
+          width="450"
+          height="450"
         />
       </div>
       <div className="my-auto p-5 text-center">
@@ -36,7 +39,7 @@ function Intro({ isDarkMode }) {
             isDarkMode ? "dark-green" : "text-slate-700"
           }`}
         >
-          Hello, I'm
+          Hello, I&#39;m
         </p>
         <p className="font-bold text-6xl py-3 typing-text">Athul Bhandary</p>
         {/* <p className={`font-bold text-4xl ${isDarkMode ? 'dark-green' : 'text-slate-700'}`}>Fullstack Developer</p> */}
@@ -86,5 +89,8 @@ function Intro({ isDarkMode }) {
     </div>
   );
 }
+Intro.propTypes = {
+  isDarkMode: PropTypes.bool.isRequired
+};
 
 export default Intro;

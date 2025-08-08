@@ -1,0 +1,32 @@
+{
+  "name": "Athul Bhandary - Full Stack Developer Portfolio",
+  "short_name": "Athul Portfolio",
+  "description": "Portfolio of Athul Bhandary - Full Stack Developer specializing in React, AI/ML, and modern web technologies",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#10b981",
+  "orientation": "portrait-primary",
+  "categories": ["business", "developer", "portfolio"],
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/profile3.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/profile1.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/profile2.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
